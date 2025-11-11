@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "aulas\Classes\Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangulo", "aulas\Triangulo\Triangulo.csproj", "{8FCC1B2D-CEC4-4B8F-9430-AD97F7169515}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Produto", "aulas\Produto\Produto.csproj", "{BB86AFFD-AFCA-4F8E-B05F-A78481569363}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{8FCC1B2D-CEC4-4B8F-9430-AD97F7169515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FCC1B2D-CEC4-4B8F-9430-AD97F7169515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FCC1B2D-CEC4-4B8F-9430-AD97F7169515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB86AFFD-AFCA-4F8E-B05F-A78481569363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB86AFFD-AFCA-4F8E-B05F-A78481569363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB86AFFD-AFCA-4F8E-B05F-A78481569363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB86AFFD-AFCA-4F8E-B05F-A78481569363}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1B20277E-A933-4439-891E-B97233A65492} = {281EF7B5-9B42-4EAE-AE97-C7E1B00DE449}
 		{8FCC1B2D-CEC4-4B8F-9430-AD97F7169515} = {281EF7B5-9B42-4EAE-AE97-C7E1B00DE449}
+		{BB86AFFD-AFCA-4F8E-B05F-A78481569363} = {281EF7B5-9B42-4EAE-AE97-C7E1B00DE449}
 	EndGlobalSection
 EndGlobal
