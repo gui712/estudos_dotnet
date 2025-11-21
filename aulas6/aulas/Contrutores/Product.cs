@@ -3,49 +3,69 @@ namespace Contrutores
 {
     public class Product
     {
-        public string Name;
-        public double Price;
-        public int Quantity;
+        private string _name;
+        private double _price;
+        private int _quantity;
         
         public Product(string name, double price, int quantity)
         {
-            Name = name;
-            Price = price;
-            Quantity = quantity;
+            _name = name;
+            _price = price;
+            _quantity = quantity;
         }
 
         public Product(string name, double price)
         {
-            Name = name;
-            Price = price;
+            _name = name;
+            _price = price;
         }
 
         public Product()
         {
         }
 
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public void SetName(string name)
+        {
+            _name = name;
+        }
+
+        public double GetPrice()
+        {
+            return _price;
+        }
+
+        public int GetQuantity()
+        {
+            return _quantity;
+        }
+
         public double TotalValueInStock()
         {
-            return Price * Quantity;
+            return _price * _quantity;
         }
 
         public void AddProducts(int quantity)
         {
-            Quantity += quantity;
+            _quantity += quantity;
         }
 
         public void RemoveProducts(int quantity)
         {
-            Quantity -= quantity;
+            _quantity -= quantity;
         }
 
         public override string ToString()
         {
-            return Name
+            return _name
                 + ", $ "
-                + Price.ToString("F2", CultureInfo.InvariantCulture)
+                + _price.ToString("F2", CultureInfo.InvariantCulture)
                 + ", "
-                + Quantity
+                + _quantity
                 + " units, Total: $ "
                 + TotalValueInStock().ToString("F2", CultureInfo.InvariantCulture);
         }
