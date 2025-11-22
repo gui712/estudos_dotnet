@@ -1,74 +1,54 @@
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 namespace Contrutores
 {
     public class Product
     {
-        private string _name;
-        private double _price;
-        private int _quantity;
+        public string Name { get; set; }
+        public double Price { get; private set; }
+        public int Quantity { get; private set; }
         
         public Product(string name, double price, int quantity)
         {
-            _name = name;
-            _price = price;
-            _quantity = quantity;
+            Name = name;
+            Price = price;
+            Quantity = quantity;
         }
 
         public Product(string name, double price)
         {
-            _name = name;
-            _price = price;
+            Name = name;
+            Price = price;
         }
 
         public Product()
         {
         }
 
-        public string GetName()
-        {
-            return _name;
-        }
-
-        public void SetName(string name)
-        {
-            _name = name;
-        }
-
-        public double GetPrice()
-        {
-            return _price;
-        }
-
-        public int GetQuantity()
-        {
-            return _quantity;
-        }
-
         public double TotalValueInStock()
         {
-            return _price * _quantity;
+            return Price * Quantity;
         }
 
         public void AddProducts(int quantity)
         {
-            _quantity += quantity;
+            Quantity += quantity;
         }
 
         public void RemoveProducts(int quantity)
         {
-            _quantity -= quantity;
+            Quantity -= quantity;
         }
 
         public override string ToString()
         {
-            return _name
+            return Name
                 + ", $ "
-                + _price.ToString("F2", CultureInfo.InvariantCulture)
+                + Price.ToString("F2", CultureInfo.InvariantCulture)
                 + ", "
-                + _quantity
+                + Quantity
                 + " units, Total: $ "
                 + TotalValueInStock().ToString("F2", CultureInfo.InvariantCulture);
         }
-
     }
 }
